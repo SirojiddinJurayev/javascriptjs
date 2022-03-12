@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="addBox" type="button">add box</button>
+    <button id="resetRoot" type="button">Reset</button>
+    <div id="root"></div>
+    <label class="label__body" for="body__color">Change body backgraund color</label>
+    <input type="color" id="body__color">
+    <p class="changed__color"></p>
+    <h4 class="title">Change width and height of the box</h4>
+    <label class="box__label" for="box__width">Change width</label>
+    <input class="box__input" type="number" id="box__width">
+    <label class="box__label" for="box__height">Change height</label>
+    <input class="box__input" type="number" id="box__height">
+    <button type="button" id="change__size">Press me</button>
+    <div class="big__box"></div>
+    <div class="tabs">
+        <div class="tabs__title">
+            <h3 class="table__title active__tab" data-id="0">Tab 1</h3>
+            <h3 class="table__title" data-id="1">Tab 2</h3>
+            <h3 class="table__title" data-id="2">Tab 3</h3>
+        </div>
+        <div class="tabs__items"> 
+            <div class="tab__inner active__content " data-id="0">
+                <p class="tab__text">Tab content 1</p>
+            </div>
+            <div class="tab__inner" data-id="1">
+                <p class="tab__text">Tab content 2</p>
+            </div>
+            <div class="tab__inner" data-id="2  ">
+                <p class="tab__text">Tab content 3</p>
+            </div>
+        </div>
+    </div>
+    <section onmouseover="onMouseOver(this)" onmouseout="onMouseOut(this)" onclick="clickHandler(this)" ondblclick=" dubleclickHandler(this)" class="box-4"></section>
+    <section id="box-5"></section>
+    <form id="form1">
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label>
+  <p id="result"></p>
+</form>
+<div class="left">
+<div id="box-6"></div>
+
+
+
+
+
+
+<form>
+<label for="cars">Choose a div color:</label>
+<select name="color" id="color" form="colorform">
+  <option value="yellow">Yellow</option>
+  <option value="green">Green</option>
+  <option value="blue">Blue</option>
+  <option value="black">Black</option>
+</select>
+</form>
+</div>
+<form>
+    <label for="city">Viloyatni tanlang</label>
+    <select class="form-control" name="address" onchange="change_model(this.options[this.selectedIndex].value)" id="city1">
+        <option value="Viloyatni tanlang">Viloyatni tanlang</option>
+        <option value="Qoraqalpog'iston Respublikasi">Qoraqalpog'iston Respublikasi
+        <option value="Andijon viloyati">Andijon viloyati</option>
+        <option value="Buxoro viloyati">Buxoro viloyati</option>
+        <option value="Jizzax viloyati">Jizzax viloyati</option>
+        <option value="Navoiy viloyati">Navoiy viloyati</option>
+        <option value="Namangan viloyati">Namangan viloyati</option>
+        <option value="Samarqand viloyati">Samarqand viloyati</option>
+        <option value="Sirdaryo viloyati">Sirdaryo viloyati</option>
+        <option value="Surxondaryo viloyati">Surxondaryo viloyati</option>
+        <option value="Toshkent shahar">Toshkent shahar</option>
+        <option value="Toshkent viloyati">Toshkent viloyati</option>
+        <option value="Farg'ona viloyati">Farg'ona viloyati</option>
+        <option value="Xorazm viloyati">Xorazm viloyati</option>
+        <option value="Qashqadaryo viloyati">Qashqadaryo viloyati</option>
+    </select>
+      <div class="form-group">
+        <label for="city">Shaxar/Tuman</label>
+        <select type="text" class="form-control form-control-lg " name="city" id="city" value="" required="">
+            <option value="">Shaxar/Tuman</option>
+         </select>
+    </div>
+    </form>
+    <main>
+        <form>
+      
+          <select onchange="set_country(this,country,city_state)" id="region">
+            <option value="" selected="selected">SELECT 
+                STATE</option>
+          </select>
+        
+          <select name="country" disabled="disabled" onchange="set_city_state(this,city_state)"></select>
+          
+          <select name="city_state" disabled="disabled" onchange="print_city_state(country,this)"></select>
+          
+        </form>
+      </main>
+      <img  id="img" src="/JAVA SCRIPT (2)/JAVA SCRIPT/img/download.jpg" alt="rasm" width="500px">
+
+      
+      
+   <script src="main.js"></script> 
+</body>
+</html>
